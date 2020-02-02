@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'trebuchet MS';
+    font-size: 12px;
+    color: #414141;
+}
+
+img {
+    width: 100%;
+    height: 100%
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.item {
+  background: #fff;
+}
+
+@media only screen and (min-width: 1024px) {
+  .masonry {
+    column-count: 4;
+    column-gap: 1em;
+  }
+  .item {
+    margin: 0 0 1em;
+    display: inline-block;
+  }
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .masonry {
+    column-count: 3;
+    max-width: 768px;
+    column-gap: 1.5em;
+    margin: 1.5em auto;
+  }
+  .item {
+    padding: 1em;
+    margin: 0 0 1.5em;
+  }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 540px) {
+  .masonry {
+    column-count: 2;
+    max-width: 768px;
+    column-gap: 1.5em;
+    margin: 1.5em auto;
+  }
+  .item {
+    padding: 1em;
+    margin: 0 0 1.5em;
+    overflow: auto;
+  }
+}
+
+.footer-container {
+    background-color: #d92121;
+    padding: 8px 16px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin: 0px;
+}
+
+.bg-dark {
+    background-color: #d92121 !important;
+  }
+
+.footer {
+    color: white;
+    text-decoration: none;
+}
+
+.footer:hover {
+    color: lightgray;
+}
+
+.flipped-image {
+    transform: rotate(180deg);
+}
+
+.thumbnail {
+    float: left;
+    max-width: 200px;
+    max-height: 300px;
+    margin: 0em 1em 0em 0em;
+}
+
+@media only screen and (min-width: 961px) {
+    .thumbnail {
+        margin: 0em 1em 0em 1em;
+    }
+}
+
+.textbox {
+    float: left;
+    display: block;
+    border: 1px solid white;
+    background-color: dimgray;
+    color: white;
+    padding: 1em;
+    margin: 0em 1em;
+    width: 60%;
+}
+
+@media only screen and (max-width: 400px) {
+    .thumbnail {
+        width: 30%;
+    }
+    .textbox {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+    .thumbnail {
+        width: 33%;
+    }
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: none;
+    background-color: white;
+}
+
+.box {
+    border: .25em solid dimgray;
+    margin: 1em;
+}
+
+@media only screen and (max-width: 400px) {
+    .box {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+    .box {
+        width: 45%;
+    }
+}
+
+@media only screen and (min-width: 961px) {
+    .box {
+        width: 30%;
+    }
+}
+
+.margin {
+    margin: .5em;
+}
+.margin-p {
+    margin: 1em;
+    font-size: 1.5em;
+}
+
+.navbar-brand {
+    font-size: 2em;
+}
