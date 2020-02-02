@@ -5,8 +5,8 @@
 }
 
 body {
-    font-family: 'trebuchet MS';
-    font-size: 12px;
+    font-family: 'times new roman';
+    font-size: 16px;
     color: #414141;
 }
 
@@ -170,3 +170,101 @@ img {
 .navbar-brand {
     font-size: 2em;
 }
+
+.picbox {
+    padding: 2em;
+}
+.text {
+    padding: 2em;
+}
+.directions {
+    margin: 1em 0em 1em 2.5em;
+}
+
+.pic {
+    padding: 1em;
+}
+
+@media only screen and (min-width: 1024px) {
+    .picbox {
+        width: 15%;
+    }
+    .text {
+        width: 50%;
+    }
+    .supply-box {
+        width: 30%;
+    }
+    .directions {
+        width: 60%;
+        margin: 0em;
+    }
+    .pic {
+        width: 30%;
+    }
+  }
+  
+  @media only screen and (max-width: 1023px) and (min-width: 768px) {
+    .picbox {
+        width: 30%;
+    }
+    .text {
+        width: 50%;
+    }
+    .supply-box {
+        width: 30%;
+    }
+    .directions {
+        width: 50%;
+        margin: 0em;
+    }
+    .pic {
+        width: 45%;
+    }
+  }
+  
+  @media only screen and (max-width: 767px) and (min-width: 540px) {
+    .picbox {
+        width: 100%;
+    }
+    .text {
+        width: 100%;
+    }
+    .supply-box {
+        width: 100%;
+    }
+    .directions {
+        width: 100%;
+        margin: 1em 0em 1em 2.5em;
+    }
+    .pic {
+        width: 100%;
+    }
+  }
+
+  #toleft {
+      justify-content: left;
+  }
+
+  h1 {
+      padding: .5em 0em 0em .5em;
+  }
+
+  .supply-box {
+      border: 3px solid grey;
+      border-radius: 1em;
+      margin: 0em 2em;
+      padding: .5em 1.5em;
+  }
+
+  .boxrule {
+      width: 90%;
+  }
+
+  .spacer {
+      height: 5em;
+  }
+
+  #gray {
+      background-color: gray;
+  }
